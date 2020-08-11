@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2962,6 +2957,36 @@ input, select, textarea {
 				font-size: 1rem;
 				margin: 0 0 4rem 0;
 			}
+		.change-content::before{
+			
+		content: '';
+		animation: animate infinite 6s;
+	}
+	@keyframes animate{
+		0%{
+			content : "A Developer";
+		}
+		20%{
+			content : "A Public Speaker";
+		}
+		40%{
+			content : "An Amaeteur Blogger"
+		}
+		60%{
+			content : "A Visionary"
+		}
+		80%{
+			content : "A Performer";
+		}
+		100%{
+			content : "An Achiever"
+		}
+		
+	} 
+			header.major > .text-primary bold {
+				font-size: 1rem;
+				margin: 0 0 4rem 0;
+			}
 
 				header.major > .date:before, header.major > .date:after {
 					content: '';
@@ -3235,7 +3260,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/dp.png");
-			background-size: auto,								auto,														30% auto;
+			background-size: auto,								auto,														50% auto;
 			background-position: center,								center,											top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
@@ -4687,3 +4712,15 @@ input, select, textarea {
 		}
 
 	}
+	/* span::before{
+		content: '';
+		animation: animate infinite 6s;
+	}
+	@keyframes animate{
+		0%{
+			content : "Developer";
+		}
+		20%{
+			content : "Public Speaker";
+		}
+	} */
