@@ -2960,7 +2960,7 @@ input, select, textarea {
 		.change-content::before{
 			
 		content: '';
-		animation: animate infinite 6s;
+		animation: animate infinite 12s;
 	}
 	@keyframes animate{
 		0%{
@@ -2970,16 +2970,16 @@ input, select, textarea {
 			content : "A Public Speaker";
 		}
 		40%{
-			content : "An Amaeteur Blogger"
+			content : "An Amaeteur Blogger";
 		}
 		60%{
-			content : "A Visionary"
+			content : "A Visionary";
 		}
 		80%{
 			content : "A Performer";
 		}
 		100%{
-			content : "An Achiever"
+			content : "An Achiever";
 		}
 		
 	} 
