@@ -2960,7 +2960,7 @@ input, select, textarea {
 		.change-content::before{
 			
 		content: '';
-		animation: animate infinite 12s;
+		animation: animate infinite 10s;
 	}
 	@keyframes animate{
 		0%{
