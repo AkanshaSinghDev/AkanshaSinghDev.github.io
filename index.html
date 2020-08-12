@@ -41,7 +41,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
+							<li><a href="#contactUs">Contact Me</a></li>
 							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
@@ -227,8 +227,8 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">July,2020</span>
-										<h2>Online Educational Application With Intelligent Analytics In Android<br />
+										<span class="date">October,2018</span>
+										<h2>Face Filter |Computer Vision<br />
 										</h2>
 									</header>
 									<a href="images/faceRecognition.jpg" class="image fit"><img src="images/faceRecognition.jpg" alt="" /></a>
@@ -247,12 +247,6 @@
 											<a href="https://github.com/AkanshaSinghDev/Face_Recognition" type="bold">Click to access source code</a></p>
 									</span>
 									<a onclick="myFunction5();" href="javascript:void(0);" class="button" id="myBtn5">Read More</a>
-									<!-- <ul class="actions special">
-										<a href="myFuction(); return false;" onclick="myFuction(); return false;" class="button" id="myBtn">LINK</a>
-										<li><a href= "javascript : myFunction()"id ="myBtn" class="button">Full Story</a></li> 
-									</ul> -->
-<!-- 									
-									 <button onclick="myFunction()" class = "button" id="myBtn">Read more</button> -->
 									 <script>
 										function myFunction5() {
 										  var dots = document.getElementById("dots5");
@@ -311,27 +305,42 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
+						<a id="contactUs"></a>
+						<section>
+							<form method="post" action="https://script.google.com/macros/s/AKfycbwJmFlbouBcIK6rs_dUSEYXb1wmHgxOhs63jrTEDQ/exec">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" required placeholder=""/>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="email" id="email" required placeholder=""/>
+										<span class="email-invalid" style="display:none">
+											Must be a valid email address</span>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea name="message" id="message" rows="5"
+										required placeholder=""></textarea>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
+								
+									<input type="submit" value="Send Message" />
+									<!-- Customise the Thankyou Message People See when they submit the form: -->
+									<div class="thankyou_message" style="display:none;">
+										<h2><em>Thanks</em> for contacting us!
+										We will get back to you soon!</h2>
+									</div>
+								
+									</form>
+								
+									<!-- Submit the Form to Google Using "AJAX" -->
+									<script data-cfasync="false" type="text/javascript"
+									src="form-submission-handler.js"></script>
+								<!-- END -->
+							
+						</section> 
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
