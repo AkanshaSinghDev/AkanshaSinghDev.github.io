@@ -2962,6 +2962,7 @@ input, select, textarea {
 		content: '';
 		animation: animate infinite 10s;
 	}
+	#more {display: none;}
 	@keyframes animate{
 		0%{
 			content : "A Developer";
